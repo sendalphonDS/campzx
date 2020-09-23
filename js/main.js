@@ -165,6 +165,14 @@
      //Lettering
 
      $('.nombre-sitio').lettering();
+    //agregar clase a menu
+    $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
+
+    $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
+
+    $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+
+
      // menu fijo
      var windowHeight = $(window).height();
      var barraAltura = $('.barra').innerHeight(true);
@@ -213,5 +221,6 @@
          $('#segundos').html(event.strftime('%S'));
      });
 
-
+   // colorbox
+   $('.invitado-info').colorbox({ inline: true, width: '50%' });
  });
